@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>Wikipedia RAG Retrieval Demo</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Wikipedia RAG Retrieval Demo</h1>
+        <p class="subtitle">低成本、零付費 API 的中文 Wikipedia 檢索系統</p>
+
+        <div class="search-box">
+            <input id="queryInput" type="text" placeholder="輸入問題，例如：日本的首都是哪裡？">
+            <button onclick="search()">Search</button>
+        </div>
+
+        <div id="results"></div>
+    </main>
+
+    <script>
+        async function search() {
+            const query = document.getElementById("queryInput").value;
+            const resultsDiv = document.getElementById("results");
+
+            if (!query.trim()) {
+                alert("請輸入問題");
+                return;
+            }
+
+            resultsDiv.innerHTML = "<p>搜尋中...</p>";
+
+            const response = await fetch("/search", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify({
+                    query: query,
+                    top_k: 5
+                })
+            });
+
+            const data = await response.json();
+
+            let html = `<h2>查詢問題：${data.query}</h2>`;
+
+            data.results.forEach((item, index) => {
+                html += `
+                    <div class="card">
+                        <h3>參考 ${index + 1}: ${item.title} / ${item.section}</h3>
+                        <p class="score">Final Score: ${item.final_score.toFixed(4)}</p>
+                        <p>${item.chunk_text}</p>
+                    </div>
+                `;
+            });
+
+            resultsDiv.innerHTML = html;
+        }
+    </script>
+</body>
+</html>

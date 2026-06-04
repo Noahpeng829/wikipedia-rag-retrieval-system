@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: Arial, "Microsoft JhengHei", sans-serif;
+    background:
+        radial-gradient(circle at 20% 20%, #dbeafe, transparent 30%),
+        radial-gradient(circle at 80% 0%, #e0e7ff, transparent 35%),
+        #f8fafc;
+    color: #1f2937;
+}
+
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 32px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #64748b;
+    margin-bottom: 32px;
+}
+
+.search-box {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+input {
+    flex: 1;
+    padding: 14px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+button {
+    padding: 14px 24px;
+    border: none;
+    border-radius: 12px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 16px;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.score {
+    color: #2563eb;
+    font-size: 14px;
+}
