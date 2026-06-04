@@ -31,6 +31,9 @@ The system is designed to be reproducible, maintainable, and deployable without 
 ## Demo
 
 ![Demo](docs/demo.png)
+
+---
+
 ## Project Highlights
 
 ---
@@ -51,6 +54,21 @@ Key results:
 | MRR | 0.70 |
 | MAP | 0.621 |
 | nDCG@5 | 0.666 |
+
+---
+
+## Skills Demonstrated
+
+- Information Retrieval (IR)
+- Retrieval-Augmented Generation (RAG)
+- Embedding Models
+- Vector Databases
+- FAISS
+- FastAPI
+- REST API Development
+- Evaluation Framework Design
+- Error Analysis
+- Python Software Engineering
 
 ---
 
@@ -78,6 +96,24 @@ If the retrieved context is incorrect or incomplete, even a powerful LLM may pro
 Therefore, this project focuses on improving and evaluating retrieval quality before adding a generation layer.
 
 This makes the system useful for understanding the core engineering challenges behind RAG applications.
+
+---
+
+## Project Status
+
+This project currently focuses on retrieval evaluation and FastAPI-based demonstration.
+
+The current implementation includes:
+
+- Knowledge base construction
+- Section-aware chunking
+- Embedding generation
+- FAISS vector retrieval
+- Retrieval evaluation
+- Error analysis
+- FastAPI web interface
+
+Full Retrieval-Augmented Generation (RAG) with answer generation is planned as a future improvement through local or cloud-based LLM integration.
 
 ---
 
@@ -226,7 +262,8 @@ wikipedia-rag-retrieval-system/
 │
 └── docs/
     ├── architecture.png
-    └── demo.png
+    ├── demo.png
+    └── evaluation_result.png
 ```
 
 ---
@@ -242,7 +279,7 @@ python -m venv .venv
 Activate environment (Windows):
 
 ```bash
-.venv\Scripts\activate
+.\.venv\Scripts\activate
 ```
 
 Install dependencies:
@@ -463,7 +500,7 @@ and represents an important future optimization direction.
 
 Noah Peng
 
-AI & Data Analytics Practitioner
+Data Analyst & AI Practitioner
 
 National Taipei University
 

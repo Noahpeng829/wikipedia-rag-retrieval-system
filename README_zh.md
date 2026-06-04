@@ -37,6 +37,8 @@
 
 ![Demo](docs/demo.png)
 
+---
+
 ## 專案成果
 
 * 建立完整 Wikipedia Retrieval Pipeline
@@ -55,6 +57,21 @@
 | MRR | 0.70 |
 | MAP | 0.621 |
 | nDCG@5 | 0.666 |
+
+---
+
+## 本專案展現能力
+
+- 資訊檢索（Information Retrieval）
+- Retrieval-Augmented Generation（RAG）
+- Embedding 向量模型應用
+- 向量資料庫與 FAISS
+- FastAPI 後端開發
+- REST API 設計
+- 檢索評估框架建置
+- 錯誤分析與優化
+- Python 軟體工程實作
+
 ---
 
 ## 專案動機
@@ -86,6 +103,24 @@
 因此，本專案先聚焦於 Retrieval Quality 的設計、評估與錯誤分析，再保留未來整合生成層的擴充空間。
 
 這讓本專案不只是單純串接 LLM API，而是更接近實際 RAG 系統開發時會遇到的核心工程問題。
+
+---
+
+## 專案目前狀態
+
+本專案目前聚焦於檢索系統（Retrieval Layer）的設計、評估與 FastAPI 展示介面開發。
+
+目前已完成：
+
+- 知識庫建置
+- Section-aware Chunking
+- Embedding 向量生成
+- FAISS 向量檢索
+- Retrieval 評估框架
+- 錯誤案例分析
+- FastAPI Web 展示介面
+
+完整的 Retrieval-Augmented Generation（RAG）答案生成流程尚未納入目前版本，未來將評估整合本地大型語言模型（Local LLM）或雲端 LLM 服務，以建立完整的問答系統。
 
 ---
 
@@ -271,7 +306,7 @@ python -m venv .venv
 Windows 啟用：
 
 ```bash
-.venv\Scripts\activate
+.\.venv\Scripts\activate
 ```
 
 安裝套件：
