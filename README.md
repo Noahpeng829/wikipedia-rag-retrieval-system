@@ -463,7 +463,7 @@ and represents an important future optimization direction.
 
 Noah Peng
 
-AI & Data Analysis
+AI & Data Analytics Practitioner
 
 National Taipei University
 
