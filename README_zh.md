@@ -523,7 +523,7 @@ Entity Focus Drift（實體焦點漂移）
 
 **Noah Peng（彭伊宏）**
 
-AI 與資料分析師
+資料分析師與AI應用工程師
 
 國立臺北大學（National Taipei University）
 

@@ -36,7 +36,6 @@ The system is designed to be reproducible, maintainable, and deployable without 
 
 ## Project Highlights
 
----
 
 - Built an end-to-end Wikipedia retrieval pipeline
 - Implemented FAISS-based semantic vector search
@@ -500,7 +499,7 @@ and represents an important future optimization direction.
 
 Noah Peng
 
-Data Analyst & AI Practitioner
+Data Analyst & AI Application Practitioner
 
 National Taipei University
 
